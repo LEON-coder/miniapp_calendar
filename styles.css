@@ -249,12 +249,12 @@ tr {
   display: flex;
   padding-left: 12px;
   flex-direction: column;
+  width: auto;
 }
 
-.border-stripe {
+.borde r-stripe {
   border-radius: 8px;
   width: 4px;
-  height: 42px;
   background: var(--colors-system-blue);
   display: flex;
 }
@@ -271,11 +271,10 @@ tr {
 footer {
   border-top: 0.50px solid var(--colors-divider);
   display: flex;
-  width: 100%;
   height: 85px;
   backdrop-filter: blur(50px);
-  background: var(--colors-bg-menu);
   justify-content: space-between;
+  background-color: var(--colors-bg-secondary-color);
 }
 
 .footer__contols-menu {
@@ -284,7 +283,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(50px);
-  background: var(--colors-bg-menu);
+  padding: 0 16px;
 }
 
 .footer__icon {
@@ -292,10 +291,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.icon {
-  padding: 8px 25px;
 }
 
 .icon svg {
