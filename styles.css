@@ -260,12 +260,6 @@ tr {
   width: auto;
 }
 
-.borde r-stripe {
-  border-radius: 8px;
-  width: 4px;
-  background: var(--colors-system-blue);
-  display: flex;
-}
 
 .name-event {
   font-family: var(--font-family);
@@ -274,6 +268,27 @@ tr {
   line-height: 129%;
   letter-spacing: -0.02em;
   color: var(--colors-text-color);
+}
+
+
+.button-event-add {
+  background: url('img/section-calendar/Frame_1000001525.png');
+  border-radius: 90px;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 5px 20px 1px var(--colors-divider);
+  background: var(--colors-bg-overlay);
+  border: none;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.button-event-plus {
+  position: absolute;
+  fill: #007AFF;
 }
 
 footer {
