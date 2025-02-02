@@ -51,6 +51,7 @@
   border-bottom: 0.50px solid var(--colors-divider);
   height: 43px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .name {
@@ -163,4 +164,52 @@
   margin-top: 24px;
   border: none;
   cursor: pointer;
+}
+
+.swithcer {}
+
+/* Стили для переключателя (switcher)  */
+
+.toggle-switch {
+  position: relative;
+  display: flex;
+  border-radius: 100px;
+  width: 51px;
+  height: 31px;
+  background: var(--colors-bg-secondary-color);
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 34px;
+  transition: background-color 0.2s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+input:checked+.slider {
+  background: var(--colors-green);
+}
+
+
+
+input:checked+.slider::before {
+  transform: translateX(19px);
+  transition: .5s;
 }

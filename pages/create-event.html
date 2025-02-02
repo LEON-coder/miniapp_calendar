@@ -54,15 +54,22 @@
 <section class="during-event-block">
 <article class="all-day-block">
 <span class="name">Весь день</span>
-<section class="swithcer"></section>
+
+<section class="swithcer">
+<label class="toggle-switch">
+  <input type="checkbox" onchange="toggleIt()">
+  <span class="slider"></span>
+</label>
+</section>
+
 </article>
 
 <article class="start-event-block">
 <span class="name">Начало</span>
 
 <section class="indicates">
-<input class="indicate-date" placeholder="8 янв 2025 г">
-<input class="indicate-time" placeholder="08:00">
+<input type="text" class="indicate-date" placeholder="8 янв 2025 г">
+<input type="text" class="indicate-time" placeholder="08:00">
 </section>
 </article>
 
@@ -78,7 +85,12 @@
 <section class="event-select-video-option">
   <article class="all-day-block">
 <span class="name">Видеоконференция</span>
-<section class="swithcer"></section>
+<section class="swithcer">
+  <label class="toggle-switch">
+  <input type="checkbox" onchange="toggleIt()">
+  <span class="slider"></span>
+</label>
+</section>
 </article>
 
 <article class="event-add-members">
@@ -99,5 +111,6 @@
 
  
   </section>
+  <script src="/js/create-event.js"></script>
 </body>
 </html>
