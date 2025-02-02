@@ -1,0 +1,73 @@
+.record-describe {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  letter-spacing: -0.01em;
+  color: var(--colors-secondary-hint-color);
+  margin-top: 8px;
+}
+
+.record-content {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon .self-recorder {
+  fill: #007AFF;
+}
+
+.self-recorder {
+  font-family: var(--font-family);
+  font-weight: 590;
+  font-size: 11px;
+  line-height: 118%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #007AFF;
+}
+
+.record-option {
+  border-radius: 12px;
+  height: 88px;
+  background: var(--colors-bg-color);
+}
+
+.record-item {
+  padding: 16px 16px 8px 16px;
+  width: 390px;
+  height: 40px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--colors-subtitle-text-color);
+  display: flex;
+}
+
+.record-processing {
+  border: none;
+  margin-top: 72px;
+  margin-bottom: 108px;
+  font-family: var(--font-family);
+  font-weight: 590;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--colors-white-global);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.record-button-text {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-self: center;
+}

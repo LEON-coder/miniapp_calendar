@@ -48,10 +48,14 @@
 
 .all-day-block {
   display: flex;
-  border-bottom: 0.50px solid var(--colors-divider);
   height: 43px;
   align-items: center;
   justify-content: space-between;
+  padding: 11px 16px 11px 16px;
+}
+
+.all-day-block:first-child {
+  border-bottom: 0.50px solid var(--colors-divider);
 }
 
 .name {

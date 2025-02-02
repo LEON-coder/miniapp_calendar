@@ -1,3 +1,9 @@
+@import url('css/record.css');
+@import url('css/create-event.css');
+@import url('css/event.css');
+
+
+
 :root {
   --colors-bg-color: #fff;
   --colors-text-color: #000;
@@ -170,7 +176,7 @@ body {
 }
 
 .app-optional {
-  padding: 11px 16px 11px 0px;
+  padding: 11px 16px 11px 16px;
   background: none;
   border: none;
 }
