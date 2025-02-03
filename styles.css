@@ -1,6 +1,8 @@
 @import url('css/record.css');
 @import url('css/create-event.css');
 @import url('css/event.css');
+@import url('css/record.css');
+@import url('css/events-list.css');
 
 
 
@@ -328,7 +330,6 @@ tr {
   border-radius: 90px;
   width: 56px;
   height: 56px;
-  box-shadow: 0 5px 20px 1px var(--colors-divider);
   background: var(--colors-bg-overlay);
   border: none;
   margin-left: auto;
@@ -337,6 +338,10 @@ tr {
   align-items: center;
   position: relative;
   cursor: pointer;
+}
+
+.button-event-add:hover {
+  box-shadow: 0 5px 20px 1px var(--colors-divider);
 }
 
 .button-event-plus {
@@ -369,9 +374,20 @@ footer {
   align-items: center;
 }
 
-.icon svg {
+.events,
+.self-recorder,
+.options {
   fill: #A2ACB0
 }
+
+.calendar {
+  fill: #007AFF;
+}
+
+.icon__describe-calendar {
+  color: #007AFF;
+}
+
 
 .footer__icon:hover svg {
   transition: 1s;
@@ -391,7 +407,21 @@ footer {
   -o-transition: 1s;
 }
 
-.icon__describe {
+
+
+.icon__describe-calendar {
+  font-family: var(--font-family);
+  font-weight: 590;
+  font-size: 11px;
+  line-height: 118%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--colors-system-blue);
+}
+
+.icon__describe-self-recorder,
+.icon__describe-events,
+.icon__describe-options {
   font-family: var(--font-family);
   font-weight: 590;
   font-size: 11px;
@@ -399,10 +429,4 @@ footer {
   letter-spacing: 0.01em;
   text-align: center;
   color: var(--colors-secondary-hint-color);
-
-}
-
-.calendar {
-  width: 25px;
-  height: 25px;
 }

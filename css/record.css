@@ -8,6 +8,16 @@
   margin-top: 8px;
 }
 
+.record-calendar {
+  font-family: var(--font-family);
+  font-weight: 590;
+  font-size: 11px;
+  line-height: 118%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--colors-secondary-hint-color);
+}
+
 .record-content {
   padding: 0 16px;
   display: flex;
@@ -46,12 +56,13 @@
   text-transform: uppercase;
   color: var(--colors-subtitle-text-color);
   display: flex;
+  margin-top: 47px;
 }
 
-.record-processing {
+.start-record {
+  display: flex;
   border: none;
   margin-top: 72px;
-  margin-bottom: 108px;
   font-family: var(--font-family);
   font-weight: 590;
   font-size: 20px;
@@ -63,6 +74,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 900px;
+  width: 124px;
+  align-self: center;
+}
+
+.stop-record {
+  display: none;
+  border: none;
+  margin-top: 72px;
+  font-family: var(--font-family);
+  font-weight: 590;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 900px;
+  width: 124px;
+  align-self: center;
+  background: var(--colors-red);
+}
+
+.active-record {
+  display: flex;
 }
 
 .record-button-text {
@@ -70,4 +107,147 @@
   align-items: center;
   position: absolute;
   justify-self: center;
+}
+
+.button-record-shadow {
+  border-radius: 900px;
+  width: 148px;
+  height: 148px;
+  background: var(--colors-system-blue);
+  opacity: 0.15;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  animation: pulseShadow infinite;
+  -webkit-animation: pulseShadow 2s infinite;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+
+@keyframes pulseShadow {
+  0% {
+    width: 0;
+    height: 0;
+  }
+
+  30% {
+    width: 148px;
+    height: 148px;
+  }
+
+  60% {
+    width: 100px;
+    height: 100px;
+  }
+
+  90% {
+    width: 50px;
+    height: 50px;
+  }
+
+  100% {
+    width: 0;
+    height: 0;
+  }
+
+}
+
+
+
+/* Стили для счетчика времени */
+
+.record-button-timer {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 61, 0);
+}
+
+#timer {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--colors-secondary-hint-color);
+  margin-top: 24px;
+}
+
+
+/* Модальное окно */
+
+.modal-window-frame {
+  display: none;
+  width: 100%;
+  background: var(--colors-darken-overlay);
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.record-saved-modal-window {
+  border-radius: 12px;
+  width: 270px;
+  height: 154px;
+  background: var(--colors-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px 16px 16px;
+}
+
+.record-saved__describe {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--colors-text-color);
+  margin-top: 4px;
+  padding: 0 16px 16px 16px;
+}
+
+.everything-events {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--colors-text-color);
+  font-weight: 590;
+}
+
+.record-saved__close {
+  font-family: var(--font-family);
+  font-weight: 590;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--colors-system-blue);
+  border-top: 0.50px solid var(--colors-divider);
+  padding: 11px 10px;
+  width: 270px;
+  height: 44px;
 }

@@ -1,0 +1,25 @@
+.events-list-area {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-top: 181px;
+}
+
+.events-list-block-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-event-empty {
+  margin-top: 24px;
+}
+
+
+.events {
+  fill: var(--colors-system-blue);
+}
+
+#events {
+  color: var(--colors-system-blue);
+}
