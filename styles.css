@@ -202,7 +202,6 @@ body {
 }
 
 .main__section-body {
-  height: 100%;
   background: var(--colors-bg-secondary-color);
   border-radius: 15px 15px 0 0;
 }
@@ -330,7 +329,6 @@ tr {
   border-radius: 90px;
   width: 56px;
   height: 56px;
-  background: var(--colors-bg-overlay);
   border: none;
   margin-left: auto;
   display: flex;
@@ -338,6 +336,8 @@ tr {
   align-items: center;
   position: relative;
   cursor: pointer;
+  box-shadow: 0 5px 20px 1px var(--colors-divider);
+  background: var(--colors-bg-overlay);
 }
 
 .button-event-add:hover {

@@ -5,6 +5,10 @@
   margin-top: 181px;
 }
 
+.events-list__created-events-block {
+  overflow-y: hidden;
+}
+
 .events-list-block-empty {
   display: flex;
   flex-direction: column;
@@ -22,4 +26,108 @@
 
 #events {
   color: var(--colors-system-blue);
+}
+
+.main__section-events-list {
+  background: var(--colors-bg-secondary-color);
+  border-radius: 15px 15px 0 0;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.event-list__describe-calendar,
+.icon__describe_self-recorder {
+  font-family: var(--font-family);
+  font-weight: 590;
+  font-size: 11px;
+  line-height: 118%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--colors-secondary-hint-color);
+}
+
+.events-list-area {
+  display: none;
+}
+
+.day-of-the-week {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--colors-subtitle-text-color);
+  padding: 16px 16px 8px 0px;
+  width: auto;
+  height: 40px;
+  display: flex;
+}
+
+.event {
+  border-radius: 12px;
+  padding: 11px 16px 11px 16px;
+  width: 100%;
+  height: 64px;
+  background: var(--colors-bg-color);
+}
+
+.headline-event {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-text-color);
+}
+
+.goals-event {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: var(--colors-subtitle-text-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.headline-event-block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.event-status {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.event-top {
+  background: var(--colors-bg-color);
+  border-top-left-radius: 12px;
+  padding: 11px 16px 11px 16px;
+  border-top-right-radius: 12px;
+}
+
+.event-bottom {
+  background: var(--colors-bg-color);
+  border-bottom-left-radius: 12px;
+  padding: 11px 16px 11px 16px;
+  border-bottom-right-radius: 12px;
+}
+
+.event-3-bottom {
+  background: var(--colors-bg-color);
+  border-bottom-left-radius: 12px;
+  padding: 11px 16px 11px 16px;
+  border-bottom-right-radius: 12px;
+}
+
+.middle-section {
+  background: var(--colors-bg-color);
+  padding: 11px 16px 11px 16px;
+
 }
