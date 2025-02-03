@@ -24,9 +24,6 @@
   fill: var(--colors-system-blue);
 }
 
-#events {
-  color: var(--colors-system-blue);
-}
 
 .main__section-events-list {
   background: var(--colors-bg-secondary-color);
@@ -44,6 +41,16 @@
   letter-spacing: 0.01em;
   text-align: center;
   color: var(--colors-secondary-hint-color);
+}
+
+.icon__describe-event-list {
+  font-family: var(--font-family);
+  font-weight: 590;
+  font-size: 11px;
+  line-height: 118%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--colors-system-blue);
 }
 
 .events-list-area {

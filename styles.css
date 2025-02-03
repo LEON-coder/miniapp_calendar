@@ -3,6 +3,7 @@
 @import url('css/event.css');
 @import url('css/record.css');
 @import url('css/events-list.css');
+@import url('css/settings.css');
 
 
 
@@ -57,7 +58,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 0px;
+  padding: 11px 16px;
   width: 100%;
   height: 44px;
 }
@@ -69,7 +70,6 @@ body {
   line-height: 129%;
   letter-spacing: -0.02em;
   color: var(--colors-system-blue);
-  padding: 0px 0px 0 16px;
 }
 
 .name-app-block {
@@ -178,7 +178,7 @@ body {
 }
 
 .app-optional {
-  padding: 11px 16px 11px 16px;
+  padding: 11px 0px 11px 16px;
   background: none;
   border: none;
 }
@@ -362,9 +362,9 @@ footer {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   backdrop-filter: blur(50px);
-  padding: 0 16px;
+  padding: 8px 16px;
+  align-items: baseline;
 }
 
 .footer__icon {
@@ -376,7 +376,8 @@ footer {
 
 .events,
 .self-recorder,
-.options {
+.settings,
+.describe-options {
   fill: #A2ACB0
 }
 
@@ -421,7 +422,7 @@ footer {
 
 .icon__describe-self-recorder,
 .icon__describe-events,
-.icon__describe-options {
+.icon__describe-settings {
   font-family: var(--font-family);
   font-weight: 590;
   font-size: 11px;
