@@ -78,9 +78,7 @@
 
 .settings-advertisements__text {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  flex-direction: column;
 }
 
 .settings__accounts_headline {
@@ -193,4 +191,53 @@
   color: var(--colors-text-color);
   padding: 11px 16px 11px 16px;
   width: 358px;
+}
+
+
+/* Стили для страницы с подпиской  */
+
+.settings-advertisements-active-pro {
+  border-radius: 12px;
+  height: 68px;
+  background: var(--colors-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 16px;
+}
+
+.settings-advertisements-subscription-pro {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-text-color);
+}
+
+.subscription-pro-during {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  color: var(--colors-subtitle-text-color);
+}
+
+.settings-subscription-pro-button-close {
+  font-family: var(--font-family);
+  font-weight: 590;
+  font-size: 15px;
+  line-height: 133%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--colors-system-blue);
+  border-radius: 20px;
+  padding: 6px 12px;
+  width: 98px;
+  height: 32px;
+  min-width: 34px;
+  background: var(--colors-bg-plain);
+  text-decoration: none;
+  cursor: pointer;
 }
