@@ -7,6 +7,11 @@
   margin-top: 12px;
 }
 
+.exchange__content {
+  margin-top: 12px;
+  height: 100vh;
+}
+
 .meeting-client-block {
   display: flex;
   justify-content: space-between;
@@ -159,4 +164,43 @@
 
 .back-link-img {
   padding: 0 10px 0 8px;
+}
+
+
+/* стили для страницы connect-exchange */
+.exchange__autorization {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  width: 100%;
+  background: var(--colors-bg-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.exchange___headline {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: var(--colors-subtitle-text-color);
+}
+
+.exchange__autorization_button {
+  border-radius: 10px;
+  padding: 15px 12px;
+  height: 50px;
+  background: var(--colors-system-blue);
+  font-family: var(--font-family);
+  font-weight: 590;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--colors-white-global);
+  border: none;
+  margin-top: 32px;
+  width: 100%;
 }
