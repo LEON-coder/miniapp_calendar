@@ -1,0 +1,24 @@
+.searching-block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  width: 100%;
+  height: 36px;
+  background: var(--colors-bg-plain);
+}
+
+.search-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-secondary-hint-color);
+  margin-left: 4px;
+}
