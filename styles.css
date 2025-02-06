@@ -5,6 +5,9 @@
 @import url('css/events-list.css');
 @import url('css/settings.css');
 @import url('css/settings-without-subscription.css');
+@import url('css/info-about-app.css');
+@import url('css/reference.css');
+@import url('css/policy-confidential.css');
 
 
 
@@ -53,6 +56,7 @@ body {
 .header-mobile {
   width: 100%;
   height: 54px;
+  background: black;
 }
 
 .section-name-app {

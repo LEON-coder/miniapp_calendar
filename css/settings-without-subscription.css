@@ -42,7 +42,7 @@
 }
 
 .main__section-settings {
-  background: var(--colors-bg-secondary-color);
+  background-color: var(--colors-bg-color);
   border-radius: 15px 15px 0 0;
   overflow-y: scroll;
 }
@@ -78,7 +78,6 @@
 
 .settings-advertisements__text {
   display: flex;
-  flex-direction: column;
 }
 
 .settings__accounts_headline {
@@ -190,10 +189,16 @@
   letter-spacing: -0.02em;
   color: var(--colors-text-color);
   padding: 11px 16px 11px 16px;
+  text-decoration: none;
 }
 
 
 /* Стили для страницы с подпиской  */
+
+.settings-advertisements__text-active-pro {
+  display: flex;
+  flex-direction: column;
+}
 
 .settings-advertisements-active-pro {
   border-radius: 12px;

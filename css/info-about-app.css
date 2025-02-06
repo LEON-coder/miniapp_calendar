@@ -1,0 +1,109 @@
+.info-about-app-block__describe {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-text-color);
+  margin-top: 16px;
+}
+
+.info-about-app-block__oportunities {
+  margin-top: 16px;
+}
+
+.oportunities-app-headline {
+  margin-top: 12px;
+}
+
+.oportunities-app-item__img {
+  width: 28px;
+  height: 28px;
+  margin-right: 16px;
+}
+
+.oportunities-app-items-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  gap: 12px;
+}
+
+.oportunities-app-item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 12px;
+  padding: 16px;
+  height: 76px;
+  background: var(--colors-bg-secondary-color);
+}
+
+.oportunities-app-item__describe {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-text-color);
+}
+
+.oportunities-app-advertisement-text-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.advertisement-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-text-color);
+  margin-bottom: 12px;
+}
+
+.data-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 0 16px;
+  list-style: url('../img/info-about-app/circle_list-item.png');
+}
+
+.data-list__item {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-text-color);
+  margin-bottom: 12px;
+}
+
+.app-confidential {
+  display: flex;
+  border-radius: 12px;
+  padding: 16px;
+  background: var(--colors-bg-plain);
+  margin-bottom: 34px;
+}
+
+
+
+.app-confidential__img {
+  display: flex;
+  width: 28px;
+  height: 28px;
+}
+
+.app-confidential__info {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-text-color);
+  width: fit-content;
+  margin-left: 12px;
+}

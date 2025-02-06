@@ -1,0 +1,78 @@
+ .reference-block-links {
+   display: flex;
+   border-radius: 12px;
+   padding: 16px;
+   background: var(--colors-bg-plain);
+   margin-bottom: 34px;
+ }
+
+ .reference-block-links {
+   display: flex;
+   flex-direction: column;
+   margin-top: 16px;
+ }
+
+ .reference__link {
+   font-family: var(--font-family);
+   font-weight: 500;
+   font-size: 17px;
+   line-height: 129%;
+   letter-spacing: -0.02em;
+   color: var(--colors-system-blue);
+   text-decoration: none;
+   margin-bottom: 12px;
+   cursor: pointer;
+ }
+
+ .reference__autorization {
+   margin-top: 16px;
+ }
+
+ .reference__autorization_headline {
+   font-family: var(--font-family);
+   font-weight: 590;
+   font-size: 17px;
+   line-height: 129%;
+   letter-spacing: -0.02em;
+   color: var(--colors-text-color);
+ }
+
+ .reference__autorization_describe {
+   font-family: var(--font-family);
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 129%;
+   letter-spacing: -0.02em;
+   color: var(--colors-text-color);
+   margin-top: 12px;
+ }
+
+ .reference__linking-account {
+   margin-top: 32px;
+   padding-top: 16px;
+ }
+
+ .reference__linking-account_item {
+   font-family: var(--font-family);
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 129%;
+   letter-spacing: -0.02em;
+   color: var(--colors-text-color);
+   margin: 12px 0;
+ }
+
+ .reference__linking-account_describe {
+   font-family: var(--font-family);
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 129%;
+   letter-spacing: -0.02em;
+   color: var(--colors-text-color);
+   margin-top: 12px;
+   margin-bottom: 12px;
+ }
+
+ .reference__linking-account_list {
+   padding-left: 16px;
+ }

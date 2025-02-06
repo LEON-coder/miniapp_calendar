@@ -1,0 +1,36 @@
+.policy-confidential {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-text-color);
+}
+
+.confidential-block {
+  margin-top: 16px;
+}
+
+.confidential-block__describe {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-text-color);
+}
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
+
+.confidential-block__telegosekretar {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-text-color);
+  color: var(--colors-system-blue);
+  text-decoration: none;
+}
