@@ -1,0 +1,38 @@
+.memo__block-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Memo__download {
+  cursor: pointer;
+}
+
+.memo__important-moments_headline {
+  font-family: var(--font-family);
+  font-weight: 590;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-text-color);
+}
+
+.memo__important-moments_block-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.memo__data-list {
+  margin-top: 12px;
+  padding: 0 16px;
+}
+
+.memo__data-list_item {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-text-color);
+  margin-bottom: 12px;
+}

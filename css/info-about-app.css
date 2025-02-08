@@ -52,6 +52,8 @@
   display: flex;
   flex-direction: column;
   margin-top: 16px;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .advertisement-text {
