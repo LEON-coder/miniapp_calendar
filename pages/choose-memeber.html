@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="RU">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Выбор участников</title>
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/css/event.css">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <section class="wrapper">
@@ -16,7 +15,7 @@
   <section class="main__section-body">
     <section class="section-name-app">
       <section class="back-link">
-        <img class="back-link-img" src="/img/event/left-link.png" alt="back">
+        <img class="back-link-img" src="../img/event/left-link.png" alt="back">
 <a class="back" href="">
   Назад
 </a>
@@ -24,7 +23,7 @@
 
 
 <section class="name-app-block">
-<article class="headline-app">
+<article for="" class="headline-app">
   Telegosekretar
 </article>
 <article class="app-describe">
@@ -43,23 +42,23 @@
     <section class="content-event">
 <section class="meeting-client-block">
 
- <section class="searching-block">
-<search class="search">
-<img src="../img/choose-member/search_icon.png" alt="search_icon">
-<span class="search-text">
-Поиск
-</span> 
-</search>
+ <form class="searching-block">
+<input type="search" id="search" placeholder="Поиск">
+<img class="search_icon" src="../img/choose-member/search_icon.png" alt="search_icon">
+
+<button type="button" class="search__cancel">
+  Отмена
+</button>
+</form>
 
 <section class="event-memebers-block">
-
 <section class="section-members-event">
 
 <section class="members-item">
-  <input class="member_radio" type="radio">
-  <article class="avatar-member">
+  <input id="Maksim_Sitnikov" class="member_checkbox" name="" value="Maksim Sitnikov" type="checkbox">
+  <label class="avatar-member" for="Maksim_Sitnikov">
 <img src="../img/event/avatar.png" alt="member">
-  </article>
+  </label>
 
   <section class="member-name-block">
 <span class="member-name">
@@ -72,10 +71,12 @@
   </section>
 </section>
 <section class="members-item">
-   <input class="member_radio" type="radio">
-  <article class="avatar-member">
+  <section class="members-item__checkbox">
+ <input id="Konstantin_Popovich" class="member_checkbox" value="Konstantin Popovich" type="checkbox">
+  <label for="Konstantin_Popovich" class="avatar-member">
 <img src="../img/event/kp.png" alt="member">
-  </article>
+  </label >
+  </section>
 
   <section class="member-name-block">
 <span class="member-name">
@@ -88,10 +89,10 @@
   </section>
 </section>
 <section class="members-item">
-   <input class="member_radio" type="radio">
-  <article class="avatar-member">
+   <input class="member_checkbox" id="Anna_Mashkovtseva" value="Anna Mashkovtseva" type="checkbox">
+  <label for="Anna_Mashkovtseva" class="avatar-member">
 <img src="../img/event/AM.png" alt="member">
-  </article>
+  </label>
 
   <section class="member-name-block">
 <span class="member-name">
@@ -104,10 +105,10 @@
   </section>
 </section>
 <section class="members-item">
-   <input class="member_radio" type="radio">
-  <article class="avatar-member">
+   <input class="member_checkbox" id="Henry_Franklin" value="Anna Mashkovtseva" type="checkbox">
+  <label for="Henry_Franklin" class="avatar-member">
 <img src="../img/event/HF.png" alt="member">
-  </article>
+  </label>
 
   <section class="member-name-block">
 <span class="member-name">
@@ -120,10 +121,10 @@
   </section>
 </section>
 <section class="members-item">
-   <input class="member_radio" type="radio">
-  <article class="avatar-member">
+   <input class="member_checkbox" id="Mia_Warren" value="Mia Warren" type="checkbox">
+  <label for="Mia_Warren" class="avatar-member">
 <img src="../img/event/MW.png" alt="member">
-  </article>
+  </label>
 
   <section class="member-name-block">
 <span class="member-name">
@@ -137,10 +138,10 @@
   </section>
 </section>
 <section class="members-item">
-  <input class="member_radio" type="radio">
-  <article class="avatar-member">
+  <input class="member_checkbox" value="Daisy Owens" id="Daisy_Owens" type="checkbox">
+  <label for="Daisy_Owens" class="avatar-member">
 <img src="../img/choose-member/DO.png" alt="member">
-  </article>
+  </label>
 
   <section class="member-name-block">
 <span class="member-name">
@@ -153,10 +154,10 @@
   </section>
 </section>
 <section class="members-item">
-   <input class="member_radio" type="radio">
-  <article class="avatar-member">
+   <input class="member_checkbox" id="Heather_Beck" value="Heather Beck" type="checkbox">
+  <label for="Heather_Beck" class="avatar-member">
 <img src="../img/choose-member/HB.png" alt="member">
-  </article>
+  </label >
 
   <section class="member-name-block">
 <span class="member-name">
@@ -170,10 +171,10 @@
   </section>
 </section>
 <section class="members-item">
-   <input class="member_radio" type="radio">
-  <article class="avatar-member">
+   <input class="member_checkbox" id="Adam_Olson" value="Adam Olson" type="checkbox">
+  <label for="Adam_Olson" class="avatar-member">
 <img src="../img/choose-member/ADAM.png" alt="member">
-  </article>
+  </label>
 
   <section class="member-name-block">
 <span class="member-name">
@@ -186,10 +187,10 @@
   </section>
 </section>
 <section class="members-item">
-   <input class="member_radio" type="radio">
-  <article class="avatar-member">
+   <input class="member_checkbox" id="Rose_Warren" value="Rose Warren" type="checkbox">
+  <label for="Rose_Warren" class="avatar-member">
 <img src="../img/choose-member/RW.png" alt="member">
-  </article>
+  </label>
 
   <section class="member-name-block">
 <span class="member-name">
@@ -202,10 +203,10 @@
   </section>
 </section>
 <section class="members-item">
-   <input class="member_radio" type="radio">
-  <article class="avatar-member">
+   <input class="member_checkbox" id="Rosemary_Myers" value="Rosemary Myers" type="checkbox">
+  <label for="Rosemary_Myers" class="avatar-member">
 <img src="../img/choose-member/RM.png" alt="member">
-  </article>
+  </label>
 
   <section class="member-name-block">
 <span class="member-name">
@@ -219,10 +220,10 @@
   </section>
 </section>
 <section class="members-item">
-   <input class="member_radio" type="radio">
-  <article class="avatar-member">
+   <input class="member_checkbox" id="Zoe_Craig" value="Zoe Craig" type="checkbox">
+  <label for="Zoe_Craig" class="avatar-member">
 <img src="../img/choose-member/ZC.png" alt="member">
-  </article>
+  </label>
 
   <section class="member-name-block">
 <span class="member-name">
@@ -238,12 +239,11 @@
 
 </section>
 </section>
-
 </section>
-
 </section>
     </section>
   </section>
-  </section>
+
+  <script src="../js/serach-focus-input.js"></script>
 </body>
 </html>

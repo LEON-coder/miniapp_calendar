@@ -16,6 +16,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
+  flex-direction: column;
 }
 
 .meeting-headline-page {
@@ -100,7 +101,7 @@
 .event-memebers-block {
   padding-top: 12px;
   overflow-y: scroll;
-  height: 100vh;
+  height: fit-content;
 }
 
 .members {
@@ -121,6 +122,7 @@
 .members-item {
   display: flex;
   align-items: center;
+  margin-bottom: 14px;
 }
 
 .member-name {
@@ -136,7 +138,6 @@
   display: flex;
   flex-direction: column;
   margin-left: 12px;
-  margin-bottom: 14px;
 }
 
 .member-tg {
@@ -147,6 +148,7 @@
   letter-spacing: -0.01em;
   color: var(--colors-secondary-hint-color);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .back {
@@ -206,4 +208,69 @@
   border: none;
   margin-top: 32px;
   width: 100%;
+}
+
+/* Радио кнопки кастомные  */
+.members-item,
+.radio {
+  margin-top: 5px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-label,
+.radio-label {
+  padding-left: 5px;
+}
+
+.checkbox-input,
+.radio-input {
+  appearance: none;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  box-shadow: inset 0 0 5px rgb(0 0 0 / 0.2);
+  border-radius: 50%;
+  border: 1px solid #FFFFFF;
+  transition: 500ms;
+}
+
+.radio-input {
+  border-radius: 50%;
+}
+
+.checkbox-input::after,
+.radio-input::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  font-size: 30px;
+  background-image: url("img/Multiselect_checked.png");
+  background-repeat: no-repeat;
+  transition: 500ms;
+}
+
+.radio-input:checked {
+  background-image: url("img/Multiselect_checked.png");
+}
+
+.checkbox-input:checked::after,
+.radio-input:checked::after {
+  width: 30px;
+  height: 30px;
+  transition: 500ms;
+}
+
+.checkbox-input:disabled,
+.radio-input:disabled {
+  background: #ccc;
+  border-color: #ccc;
+}
+
+.checkbox-input:disabled::after,
+.radio-input:disabled::after {
+  filter: grayscale(100%);
 }

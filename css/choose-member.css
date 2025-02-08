@@ -1,16 +1,42 @@
 .searching-block {
   display: flex;
-  flex-direction: column;
   width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.search {
-  display: flex;
-  align-items: center;
+#search {
   padding: 6px 8px;
   width: 100%;
   height: 36px;
   background: var(--colors-bg-plain);
+  padding-left: 36px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 12px;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  position: relative;
+}
+
+.search_icon {
+  position: absolute;
+  padding: 6px 8px;
+}
+
+.search__cancel {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--colors-system-blue);
+  display: none;
 }
 
 .search-text {
@@ -23,12 +49,84 @@
   margin-left: 4px;
 }
 
-.member_radio {
-  border-radius: 24px;
-  width: 24px;
-  height: 24px;
+.search-area-compact {
+  width: 240px;
 }
 
-.avatar-member {
-  margin-left: 8px;
+.members-item__checkbox {
+  display: flex;
+  align-items: center;
+}
+
+/*  Кастомные checkbox */
+
+.checkbox {
+  margin-top: 5px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-label {
+  padding-left: 5px;
+}
+
+.member_checkbox {
+  appearance: none;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  box-shadow: inset 0 0 5px rgb(0 0 0 / 0.2);
+  border-radius: 50%;
+  transition: 500ms;
+  margin-right: 12px;
+}
+
+.member_checkbox::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  font-size: 30px;
+  background-image: url("../img/choose-member/Multiselect_checked.png");
+  background-repeat: no-repeat;
+  transition: 500ms;
+  animation: checkboxAnimationChecked 1s;
+  -webkit-animation: checkboxAnimationChecked 1s;
+}
+
+@keyframes checkboxAnimationChecked {
+  from {
+    opacity: 0;
+
+  }
+
+  to {
+    opacity: 1;
+    width: 100%;
+    box-shadow: outside (5px 5px 5px 5px);
+  }
+
+}
+
+.radio-input:checked {
+  background-image: url("img/Multiselect_checked.png");
+}
+
+.member_checkbox:checked::after,
+.radio-input:checked::after {
+  width: 30px;
+  height: 30px;
+  transition: 500ms;
+}
+
+.member_checkbox:disabled,
+.radio-input:disabled {
+  background: #ccc;
+  border-color: #ccc;
+}
+
+.member_checkbox:disabled::after,
+.radio-input:disabled::after {
+  filter: grayscale(100%);
 }
