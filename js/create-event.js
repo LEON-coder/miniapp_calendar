@@ -1,14 +1,12 @@
-let switchBtn = document.querySelector(".switch-btn");
+let switchBtnOn = document.querySelector(".input:checked+.slider::before ");
+let indicateDate = document.querySelector(".indicate-date");
+let indicates = document.querySelector(".indicates");
+let sectionCalendar = document.querySelector(".section-calendar-open");
 
-switchBtn.addEventListener("click", function() {
-  switchBtn.classlist.toggle("switch-on");
-});
-
-switchBtn.addEventListener("click", function() {
-  switchBtn.toggleClass("switch-on");
-  if (switchBtn.hasClass("switch-on")) {
-    switchBtn.trigger("on.switch");
+indicateDate.addEventListener("focus", function() {
+  if (indicateDate.focus) {
+    sectionCalendar.style.display = "flex";
   } else {
-    switchBtn.trigger("off.switch");
+    sectionCalendar.style.display = "none";
   }
 });

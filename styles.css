@@ -224,6 +224,7 @@ body {
 
 .main__section-calendar {
   display: flex;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -241,7 +242,9 @@ body {
 }
 
 .day-week-row {
-  width: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .border-stripe {
@@ -250,21 +253,26 @@ body {
   background: var(--colors-system-blue);
 }
 
-tr {
+.day-month {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.50px solid var(--colors-divider);
-  padding: 8px 16px 12px 16px;
+  padding: 8px 0px 12px 0px;
 }
 
 .day {
+  max-width: 15px;
   font-family: var(--font-family);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
   text-align: center;
   color: var(--colors-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .meeting-marked {
@@ -279,23 +287,9 @@ tr {
   letter-spacing: -0.01em;
   text-align: center;
   color: var(--colors-secondary-hint-color);
-  width: 40px;
+  width: auto;
 }
 
-.day {
-  width: 40px;
-  height: 40px;
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 129%;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: var(--colors-text-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 .main__section-events {
   display: flex;
