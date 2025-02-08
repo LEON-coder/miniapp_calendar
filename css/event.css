@@ -44,10 +44,16 @@
   height: 100vh;
 }
 
+.event-memo-client-block {
+  display: flex;
+  justify-content: space-between;
+}
+
 .time-meeting {
   display: flex;
   flex-direction: column;
   padding: 0 0 12px 0;
+  border-bottom: 0.50px solid var(--colors-divider);
 }
 
 .time-meeting__day,
@@ -274,3 +280,53 @@
 .radio-input:disabled::after {
   filter: grayscale(100%);
 }
+
+
+
+/* Событие (мемо и расшифровка в процессе загрузки)  */
+
+
+.memo-subscription-event-content {
+  margin-top: 24px;
+}
+
+.memo__link-downloading,
+.subscription__link-downloading {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-system-blue);
+  opacity: 0.35;
+  text-decoration: none;
+}
+
+.memo-status-block,
+.subscription-block {
+  display: flex;
+  padding: 12px 0;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 0.50px solid var(--colors-divider);
+}
+
+.memo__status {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-secondary-hint-color);
+}
+
+.memo__link-downloaded {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: var(--colors-system-blue);
+}
+
+.memo__status-complete {}
