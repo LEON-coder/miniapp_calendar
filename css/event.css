@@ -99,6 +99,8 @@
 
 .event-memebers-block {
   padding-top: 12px;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .members {
