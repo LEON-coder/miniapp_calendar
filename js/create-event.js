@@ -1,4 +1,4 @@
-let switchBtnOn = document.querySelector(".input:checked+.slider::before ");
+let switchBtnOn = document.querySelector(".slider::before");
 let indicateDate = document.querySelector(".indicate-date");
 let indicates = document.querySelector(".indicates");
 let sectionCalendar = document.querySelector(".section-calendar-open");

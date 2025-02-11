@@ -1,0 +1,61 @@
+.day-time-buisness {
+  display: flex;
+  justify-content: space-between;
+}
+
+.day-week-select-block {
+  display: flex;
+  justify-content: space-between;
+  overflow-y: scroll;
+  width: fit-content;
+}
+
+.day-week-row {
+  display: flex;
+}
+
+.day-week-cell {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  height: 60px;
+  align-items: center;
+}
+
+.cell-event-block {
+  display: flex;
+  border: 0.50px solid var(--colors-divider);
+  width: 390px;
+  height: auto;
+  overflow-y: scroll;
+}
+
+.cell-time-block {
+  display: flex;
+  flex-direction: column;
+  border-right: 0.50px solid var(--colors-divider);
+  width: 60px;
+  height: 100%;
+}
+
+.cell-event-item {
+  display: flex;
+  width: 47px;
+  height: 47px;
+  border: 0.50px solid var(--colors-divider);
+}
+
+.time-event-block {
+  display: flex;
+} .time-event {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 123%;
+  letter-spacing: -0.01em;
+  color: var(--colors-secondary-hint-color);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: auto;
+}
