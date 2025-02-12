@@ -5,6 +5,8 @@
 .content-event {
   padding: 0 16px;
   margin-top: 12px;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .exchange__content {

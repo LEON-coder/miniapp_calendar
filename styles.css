@@ -12,6 +12,7 @@
 @import url('css/full-transcription.css');
 @import url('css/change-theme.css');
 @import url('css/week.css');
+@import url('css/slider-month.css');
 
 
 
@@ -157,10 +158,11 @@ body {
   width: 24px;
   height: 24px;
   fill: #007AFF;
-  margin-left: 0;
+  margin-left: 16px;
   margin-right: auto;
-  position: relative;
+  position: absolute;
   cursor: pointer;
+  display: flex;
 }
 
 .calendar-month-indication {
@@ -216,7 +218,6 @@ body {
   border-radius: 15px 15px 0 0;
   overflow-y: scroll;
   height: 100vh;
-  margin-top: 54px;
 }
 
 .calendar__week {

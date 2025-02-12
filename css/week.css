@@ -8,6 +8,7 @@
   justify-content: space-between;
   overflow-y: scroll;
   width: fit-content;
+  padding-left: 64px;
 }
 
 .day-week-row {
@@ -47,7 +48,9 @@
 
 .time-event-block {
   display: flex;
-} .time-event {
+}
+
+.week__time-event {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 13px;
