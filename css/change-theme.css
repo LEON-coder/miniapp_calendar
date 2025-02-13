@@ -2,7 +2,6 @@
   display: flex;
 }
 
-
 .switcher-mode-label {
   width: 60px;
   height: 30px;
@@ -69,16 +68,18 @@
   width: 60px;
 }
 
+.switcher-mode-label:checked+.switcher-mode-label+.dark-theme {
+  background: #302929;
+}
+
 .dark-theme {
-  --background-color: #222222;
-  --text-color: #ffffff;
-  --accent-color: #00a7ff;
+  background: #302929;
+  color: white;
 }
 
 .switcher-mode:checked+.switcher-mode-label+.dark-theme {
   background: var(--colors-black-global);
 }
-
 
 .switcher-mode-label svg {
   position: absolute;
