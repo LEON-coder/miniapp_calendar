@@ -34,6 +34,10 @@
   flex-direction: column
 }
 
+.swiper-calendar-wrapper {
+  display: flex;
+}
+
 .swiper-wrapper {
   position: relative;
   width: 100%;
@@ -820,7 +824,7 @@ button.swiper-pagination-bullet {
 
 .gallery-thumbs {
   box-sizing: border-box;
-  padding: 10px 0;
+  padding: 10px 16px;
 }
 
 .gallery-thumbs .swiper-slide {
