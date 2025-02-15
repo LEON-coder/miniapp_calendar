@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Создать событие</title>
-    <link rel="stylesheet" href="../styles.css">  
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <section class="wrapper">
@@ -63,9 +63,9 @@
 <article class="all-day-block">
 <span class="name">Весь день</span>
 
-<section class="swithcer">
+<section class="switcher">
 <label class="toggle-switch">
-  <input type="checkbox">
+  <input type="checkbox" name="all-day" id="toggle-switch-all-day">
   <span class="slider"></span>
 </label>
 </section>
@@ -81,162 +81,11 @@
 </section>
 </article>
 
-<section class="main__section-calendar">
-  <article class="section-calendar-open">
-    <article class="create-event__calendar-section-month">
-
-<section class="create-event__calendar-month-indication">
-  <svg class="left-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.0303 5.46967C16.3232 5.76256 16.3232 6.23744 16.0303 6.53033L10.5607 12L16.0303 17.4697C16.3232 17.7626 16.3232 18.2374 16.0303 18.5303C15.7374 18.8232 15.2626 18.8232 14.9697 18.5303L8.96967 12.5303C8.67678 12.2374 8.67678 11.7626 8.96967 11.4697L14.9697 5.46967C15.2626 5.17678 15.7374 5.17678 16.0303 5.46967Z" fill="#007AFF"/>
-</svg>
-
-<span class="calendar-month-text">
-Январь 2025
-</span>
-
- <svg class="right-arrow" width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.0303 5.46967C16.3232 5.76256 16.3232 6.23744 16.0303 6.53033L10.5607 12L16.0303 17.4697C16.3232 17.7626 16.3232 18.2374 16.0303 18.5303C15.7374 18.8232 15.2626 18.8232 14.9697 18.5303L8.96967 12.5303C8.67678 12.2374 8.67678 11.7626 8.96967 11.4697L14.9697 5.46967C15.2626 5.17678 15.7374 5.17678 16.0303 5.46967Z" fill="#007AFF"/>
-</svg>
-
-</section>
-    </article>
-    <table class="create-table-month">
-      <tbody>
-            <tr class="day-week-row">
-                <td class="day-week">пн</td>
-                <td class="day-week">вт</td>
-                <td class="day-week">ср</td>
-                <td class="day-week">чт</td>
-                <td class="day-week">пт</td>
-                <td class="day-week">сб</td>
-                <td class="day-week">вс</td>
-            </tr>
-            <tr class="day-month">
-                <td class="day">30
-                 <span class="meeting-marked"></span>
-                </td>
-                 <td class="day">31
-                  <span class="meeting-marked"></span>
-                 </td>
-                  <td class="day">1
-                    <span class="meeting-marked"></span>
-                  </td>
-                <td class="day">2
-                   <span class="meeting-marked"></span>
-                </td>
-                 <td class="day">3
-                   <span class="meeting-marked"></span>
-                 </td>
-                  <td class="day">4
-                     <span class="meeting-marked"></span>
-                  </td>
-                <td class="day">5
-                   <span class="meeting-marked"></span>
-                </td>
-            </tr>
-            <tr class="day-month">
-                <td class="day">6
-                   <span class="meeting-marked"></span>
-                </td>
-                 <td class="day">7
-                   <span class="meeting-marked"></span>
-                 </td>
-                  <td class="day">8
-                     <span class="meeting-marked"></span>
-                  </td>
-                <td class="day">9
-                   <span class="meeting-marked"></span>
-                </td>
-                 <td class="day">10
-                   <span class="meeting-marked"></span>
-                 </td>
-                  <td class="day">11
-                     <span class="meeting-marked"></span>
-                  </td>
-                <td class="day">12
-                   <span class="meeting-marked"></span>
-                </td>
-            </tr>
-            <tr class="day-month">
-                <td class="day">13
-                   <span class="meeting-marked"></span>
-                </td>
-                 <td class="day">14
-                   <span class="meeting-marked"></span>
-                 </td>
-                  <td class="day">15
-                     <span class="meeting-marked"></span>
-                  </td>
-                <td class="day">16
-                   <span class="meeting-marked"></span>
-                </td>
-                 <td class="day">17
-                   <span class="meeting-marked"></span>
-                 </td>
-                  <td class="day">18
-                     <span class="meeting-marked"></span>
-                  </td>
-                <td class="day">19
-                   <span class="meeting-marked"></span>
-                </td>
-            </tr>
-            <tr class="day-month">
-                <td class="day">20
-                   <span class="meeting-marked"></span>
-                </td>
-                 <td class="day">21
-                   <span class="meeting-marked"></span>
-                 </td>
-                  <td class="day">22
-                     <span class="meeting-marked"></span>
-                  </td>
-                <td class="day">23
-                   <span class="meeting-marked"></span>
-                </td>
-                 <td class="day">24
-                   <span class="meeting-marked"></span>
-                 </td>
-                  <td class="day">25
-                     <span class="meeting-marked"></span>
-                  </td>
-                <td class="day">26
-                   <span class="meeting-marked"></span>
-                </td>
-            </tr>
-            <tr class="day-month">
-                <td class="day">27
-                   <span class="meeting-marked"></span>
-                </td>
-                 <td class="day">28
-                   <span class="meeting-marked"></span>
-                 </td>
-                  <td class="day">29
-                     <span class="meeting-marked"></span>
-                  </td>
-                <td class="day">30
-                   <span class="meeting-marked"></span>
-                </td>
-                 <td class="day">31
-                   <span class="meeting-marked"></span>
-                 </td>
-                 <td class="day no-active">1
-                   <span class="meeting-marked"></span>
-                 </td>
-                 <td class="day no-active">2
-                   <span class="meeting-marked"></span>
-                 </td>
-            </tr>
-            </tbody>
-        </table>
-  </article>
-</section>
-
-
 <article class="end-event-block">
 <span class="name">Окончание</span>
 <section class="indicates">
-<input class="indicate-date" placeholder="8 янв 2025 г">
-<input class="indicate-time" placeholder="08:00">
+<input type="text" class="indicate-date" placeholder="8 янв 2025 г">
+<input type="text" class="indicate-time" placeholder="08:00">
 </section>
 
 </article>
@@ -244,9 +93,9 @@
 <section class="event-select-video-option">
   <article class="all-day-block">
 <span class="name">Видеоконференция</span>
-<section class="swithcer">
+<section class="switcher">
   <label class="toggle-switch">
-  <input type="checkbox" onchange="toggleIt()">
+  <input type="checkbox" name="videoconf" id="toggle-switch-video-conf">
   <span class="slider"></span>
 </label>
 </section>
@@ -270,7 +119,6 @@
     </section>
   </section>
 
- 
   </section>
   <script src="../js/create-event.js"></script>
    <script src="../js/change-theme.js"></script>

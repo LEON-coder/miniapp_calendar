@@ -1,12 +1,12 @@
-let switchBtnOn = document.querySelector(".slider::before");
-let indicateDate = document.querySelector(".indicate-date");
-let indicates = document.querySelector(".indicates");
-let sectionCalendar = document.querySelector(".section-calendar-open");
 
-indicateDate.addEventListener("focus", function() {
-  if (indicateDate.focus) {
-    sectionCalendar.style.display = "flex";
-  } else {
-    sectionCalendar.style.display = "none";
-  }
+let allDayBlock = document.querySelector(".all-day-block");
+let startEventBlock = document.querySelector(".start-event-block");
+let endEventBlock = document.querySelector(".end-event-block");
+let slider = document.getElementById(
+  "toggle-switch-all-day input[type='checkbox']:checked"
+);
+
+slider.addEventListener("click", function() {
+  startEventBlock.classList.toggle("switch-off");
+  endEventBlock.classList.toggle("switch-off");
 });
