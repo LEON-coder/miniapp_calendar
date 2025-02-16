@@ -11,12 +11,14 @@ let input = document.getElementById("input[type='checkbox]");
 let eventColor = document.querySelector(".event-color");
 let span = document.getElementsByTagName("span");
 let darkTheme = document.querySelector(".dark-theme");
+let recordOption = document.querySelector(".record-option");
 let sectionMembersEvent = document.querySelectorAll(".section-members-event");
 
 toggle.addEventListener("click", function() {
   mainSectionBody.classList.toggle("dark-theme");
   headlineApp.classList.toggle("light-them-color-text");
   h3.classList.toggle("dark-theme-color-text");
+  recordOption.classList.toggle(".record-option-dark");
 
   for (let i = 0; i <= memberName.length; i++) {
     h3[i].style.color = "white";

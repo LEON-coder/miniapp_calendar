@@ -53,9 +53,14 @@
   line-height: 118%;
   letter-spacing: 0.01em;
   text-align: center;
-  color: var(--colors-secondary-hint-color);
+  background: var(--colors-bg-color);
+  border-radius: 12px;
+  padding: 6px 16px;
 }
 
+.record-option-dark {
+  background: var(--colors-bg-color);
+}
 
 .record-item {
   padding: 16px 16px 8px 16px;
@@ -122,6 +127,10 @@
   color: var(--colors-white-global);
 }
 
+.close-modal-window {
+  display: none;
+}
+
 .active-record {
   display: flex;
 }
@@ -133,7 +142,8 @@
   justify-self: center;
 }
 
-.button-record-shadow {
+
+.button-record-shadow-start {
   border-radius: 900px;
   width: 148px;
   height: 148px;
@@ -143,8 +153,27 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  animation: pulseShadow infinite;
-  -webkit-animation: pulseShadow 1s infinite;
+  animation: pulseShadowBlue 1s infinite;
+  -webkit-animation: pulseShadowBlue 1s infinite;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
+.button-record-shadow-stop {
+  display: flex;
+  border-radius: 900px;
+  width: 148px;
+  height: 148px;
+  background: var(--colors-red);
+  opacity: 0.15;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  animation: pulseShadowRed 1s infinite;
+  -webkit-animation: pulseShadowRed 1s infinite;
   transition: 1s;
   -webkit-transition: 1s;
   -moz-transition: 1s;
@@ -153,17 +182,48 @@
 }
 
 
-@keyframes pulseShadow {
+@keyframes pulseShadowBlue {
+
+  from {
+    size: 124px;
+    background: var(--colors-system-blue);
+    opacity: .5;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+
+  to {
+    size: 196px;
+    background: var(--colors-system-blue);
+    transform: scale(1.5);
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+  }
+
+
+}
+
+@keyframes pulseShadowRed {
 
   from {
     size: 124px;
     background: var(--colors-red);
     opacity: .5;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
   }
 
   to {
     size: 196px;
-    background: var(--colors-red);
     background: var(--colors-red);
     transform: scale(1.5);
     opacity: 0;
@@ -274,6 +334,7 @@
   width: 270px;
   height: 44px;
   justify-content: center;
+  display: flex;
 }
 
 /* Стили для переключателя */
