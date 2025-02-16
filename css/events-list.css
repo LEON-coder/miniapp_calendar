@@ -6,7 +6,9 @@
 }
 
 .events-list__created-events-block {
-  overflow-y: hidden;
+  overflow-y: scroll;
+  height: 100%;
+  margin-bottom: 100px;
 }
 
 .events-list-block-empty {
@@ -18,7 +20,6 @@
 .text-event-empty {
   margin-top: 24px;
 }
-
 
 .events {
   fill: var(--colors-system-blue);
@@ -137,4 +138,8 @@
   background: var(--colors-bg-color);
   padding: 11px 16px 11px 16px;
 
+}
+
+.color-event-dark-active {
+  background-color: var(--colors-bg-menu);
 }

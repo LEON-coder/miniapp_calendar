@@ -58,9 +58,12 @@ input[type=checkbox] {
   src: url('fonts/SFProDisplay-Regular.woff2');
 }
 
-
 body {
   background: black;
+  height: 100vh;
+}
+
+.wrapper {
   height: 100vh;
 }
 
@@ -230,6 +233,7 @@ body {
 .main__section-body {
   background: var(--colors-bg-secondary-color);
   border-radius: 15px 15px 0 0;
+  height: 100%;
 }
 
 .calendar__week {
@@ -377,6 +381,10 @@ footer {
   backdrop-filter: blur(50px);
   justify-content: space-between;
   background-color: var(--colors-bg-secondary-color);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .footer__contols-menu {
@@ -451,4 +459,33 @@ footer {
   letter-spacing: 0.01em;
   text-align: center;
   color: var(--colors-secondary-hint-color);
+}
+
+
+.dark-theme {
+  background: var(--colors-darken-overlay);
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.light-them-color-text {
+  color: var(--colors-bg-tertiary-color);
+}
+
+.dark-theme-color-text {
+  color: var(--colors-text-color);
+}
+
+.date-no-active {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--colors-text-color);
+  opacity: 0.15;
 }

@@ -10,7 +10,7 @@
   <section class="wrapper">
 
      <header class="header-mobile"></header>
-  <section class="main__section-record" >
+  <section class="main__section-body" id="theme-toggle">
     <section class="section-name-app">
       <section class="back-link">
         <img class="back-link-img" src="../img/event/left-link.png" alt="back">
@@ -21,12 +21,12 @@
 
 
 <section class="name-app-block">
-<article class="headline-app">
+<h3 class="headline-app">
   Telegosekretar
-</article>
-<article class="app-describe">
+</h3>
+<h3 class="app-describe">
   мини-приложение
-</article>
+</h3>
 </section>
 
 <section class="switcher-mode-theme">
@@ -60,15 +60,13 @@
 </button>
 <button type="button" class="stop-record" value="Стоп" id="stopBtn">
 <img src="../img/record/stop-frame.png" alt="record-button">
-<div class="button-record-shadow"></div>
+<span class="button-record-shadow"></span>
  <span class="record-button-text">
     Стоп
   </span>
 </button>
 
  <div id="timer">00:00:00</div>
-
- 
 <section class="modal-window-frame">
 <article class="record-saved-modal-window">
   <h3 class="record-saved__headline">
@@ -90,22 +88,25 @@
   </span>
 <section class="record-option">
   <article class="all-day-block">
-<span class="name">Мой микрофон</span>
-<section class="swithcer-voice">
-  <label class="toggle-switch-voice">
-  <input class="swithcer-voice-input" type="checkbox">
-  <span class="slider-voice"></span>
+<h4 class="name">Мой микрофон</h4>
+<section class="switcher">
+<label class="toggle-switch">
+  <input type="checkbox" name="all-day" id="toggle-switch-voice">
+  <span class="slider"></span>
 </label>
 </section>
 </article>
+
   <article class="all-day-block">
-<span class="name">Звук остальных участников</span>
-<section class="swithcer-voice">
-  <label class="toggle-switch-voice">
-  <input class="swithcer-voice-input" type="checkbox">
-  <span class="slider-voice"></span>
+<h4 class="name">Звук остальных участников</h4>
+
+<section class="switcher">
+<label class="toggle-switch">
+  <input type="checkbox" name="switcher-voice" id="toggle-switch-voice">
+  <span class="slider"></span>
 </label>
 </section>
+
 </article>
 </section>
 <span class="record-describe">
@@ -116,7 +117,7 @@
   </section>
 
 
-    <footer>
+    <footer id="theme-toggle">
     <section class="footer__contols-menu">
 <article class="footer__icon">
 <a href="../index.html" class="icon">

@@ -1,8 +1,8 @@
-.main__section-record {
+.main__section {
   background: var(--colors-bg-color);
-  border-radius: 12px;
-  height: 100vh;
-  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 100%;
 }
 
 .record-describe {
@@ -29,6 +29,7 @@
   padding: 0 16px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .icon .self-recorder {
@@ -91,6 +92,16 @@
   align-self: center;
 }
 
+.start-record:hover {
+  background: var(--colors-system-blue);
+  opacity: 0.85;
+}
+
+.start-record:pressed {
+  background: var(--colors-system-blue);
+  opacity: 0.65;
+}
+
 .stop-record {
   display: none;
   border: none;
@@ -108,6 +119,7 @@
   width: 124px;
   align-self: center;
   background: var(--colors-red);
+  color: var(--colors-white-global);
 }
 
 .active-record {
@@ -132,7 +144,7 @@
   align-items: center;
   display: flex;
   animation: pulseShadow infinite;
-  -webkit-animation: pulseShadow 2s infinite;
+  -webkit-animation: pulseShadow 1s infinite;
   transition: 1s;
   -webkit-transition: 1s;
   -moz-transition: 1s;
@@ -142,30 +154,25 @@
 
 
 @keyframes pulseShadow {
-  0% {
-    width: 0;
-    height: 0;
+
+  from {
+    size: 124px;
+    background: var(--colors-red);
+    opacity: .5;
   }
 
-  30% {
-    width: 148px;
-    height: 148px;
+  to {
+    size: 196px;
+    background: var(--colors-red);
+    background: var(--colors-red);
+    transform: scale(1.5);
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
   }
 
-  60% {
-    width: 100px;
-    height: 100px;
-  }
-
-  90% {
-    width: 50px;
-    height: 50px;
-  }
-
-  100% {
-    width: 0;
-    height: 0;
-  }
 
 }
 
@@ -216,6 +223,10 @@
   z-index: 100;
 }
 
+.modal-window-open {
+  display: flex;
+}
+
 .record-saved-modal-window {
   border-radius: 12px;
   width: 270px;
@@ -262,6 +273,7 @@
   padding: 11px 10px;
   width: 270px;
   height: 44px;
+  justify-content: center;
 }
 
 /* Стили для переключателя */
@@ -320,24 +332,88 @@
   height: 27px;
 }
 
+
+/* Стили для переключателя (switcher)  */
+
 .toggle-switch-voice {
   position: relative;
-  display: block;
-  background: var(--colors-bg-secondary-color);
-  border-radius: 200px;
-  -webkit-border-radius: 200px;
-  -moz-border-radius: 200px;
-  -ms-border-radius: 200px;
-  -o-border-radius: 200px;
-  box-shadow: inset 0px 15px 15px rgba(0, 0, 0, .4), inset 0px -5px 15px rgba(255, 255, 255, .4);
-  cursor: pointer;
-  transition: .4s;
-  -webkit-transition: .4s;
+  display: flex;
   border-radius: 100px;
   width: 51px;
   height: 31px;
-  -moz-transition: .4s;
-  -ms-transition: .4s;
-  -o-transition: .4s;
-  margin-top: 0px;
+  background: var(--colors-bg-secondary-color);
+}
+
+.toggle-switch-voice:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 0px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.slider-voice {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 34px;
+  transition: background-color 0.2s;
+}
+
+.slider-voice::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.swithcer-voice-input:checked+.slider {
+  background: var(--colors-green);
+}
+
+.swithcer-voice-input:checked+.slider::before .start-event-block {
+  display: none;
+}
+
+.swithcer-voice-input:checked .start-event-block {
+  display: none;
+}
+
+#toggle-switch-voice:checked+.slider::before {
+  transform: translateX(19px);
+  transition: .5s;
+}
+
+.switcher {
+  display: flex;
+}
+
+.switch-on {
+  display: flex;
+}
+
+.switch-off {
+  display: none;
+}
+
+#toggle-switch-voice:checked+.slider-voice::before,
+#toggle-switch-video-conf:checked+.slider-voice::before {
+  transform: translateX(19px);
+  transition: .5s;
+}
+
+.section-calendar-open {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
 }

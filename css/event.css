@@ -1,12 +1,9 @@
-.wrapper {
-  height: 100vh;
-}
-
 .content-event {
   padding: 0 16px;
   margin-top: 12px;
-  height: 100vh;
+  height: 100%;
   overflow-y: scroll;
+  margin-bottom: 100px;
 }
 
 .exchange__content {
@@ -221,11 +218,11 @@
 /* Радио кнопки кастомные  */
 .members-item,
 .radio {
-  margin-top: 5px;
-  width: fit-content;
+  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  border-bottom: 0.50px solid var(--colors-divider);
+  height: 60px;
 }
 
 .checkbox-label,
@@ -330,5 +327,3 @@
   letter-spacing: -0.02em;
   color: var(--colors-system-blue);
 }
-
-.memo__status-complete {}
