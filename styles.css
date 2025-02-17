@@ -35,7 +35,7 @@
   --colors-bg-overlay: #fff;
   --colors-bg-menu: rgba(255, 255, 255, 0.75);
   --colors-darken-overlay: rgba(0, 0, 0, 0.2);
-  color-scheme: light dark;
+
 }
 
 :root {
@@ -48,11 +48,6 @@
   box-sizing: border-box;
 }
 
-input[type=checkbox] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-}
 
 @font-face {
   font-family: "SF Pro Regular";
@@ -62,6 +57,7 @@ input[type=checkbox] {
 body {
   background: black;
   height: 100vh;
+  color-scheme: light dark;
 }
 
 .wrapper {
@@ -106,7 +102,6 @@ body {
   line-height: 129%;
   letter-spacing: -0.02em;
   text-align: center;
-  color: var(--colors-text-color);
 }
 
 .app-describe {
@@ -232,9 +227,9 @@ body {
 }
 
 .main__section-body {
-  background: var(--colors-bg-secondary-color);
   border-radius: 15px 15px 0 0;
   height: 100%;
+  background: var(--colors-bg-secondary-color);
 }
 
 .calendar__week {
@@ -472,6 +467,7 @@ footer {
 
 .dark-theme {
   background: var(--colors-darken-overlay);
+  color: var(--colors-bg-tertiary-color);
   transition: all 1s;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -483,10 +479,6 @@ footer {
   color: var(--colors-bg-tertiary-color);
 }
 
-.dark-theme-color-text {
-  color: var(--colors-text-color);
-}
-
 .date-no-active {
   font-family: var(--font-family);
   font-weight: 500;
@@ -496,4 +488,11 @@ footer {
   text-align: center;
   color: var(--colors-text-color);
   opacity: 0.15;
+}
+
+@media (prefers-color-scheme: light) {
+  .theme {
+    color: #FFFFFF;
+    background-color: #000000;
+  }
 }

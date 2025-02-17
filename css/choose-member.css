@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.search {
+#search {
   padding: 6px 8px;
   height: 36px;
   background: transparent;
@@ -71,6 +71,7 @@
   display: none;
   border: none;
   transition: 1s;
+  background: none;
 }
 
 .search-text {

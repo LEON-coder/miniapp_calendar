@@ -6,6 +6,11 @@
    margin-bottom: 34px;
  }
 
+ #reference-body {
+   color-scheme: light dark;
+   height: auto;
+ }
+
  .reference-block-links {
    display: flex;
    flex-direction: column;
@@ -34,7 +39,6 @@
    font-size: 17px;
    line-height: 129%;
    letter-spacing: -0.02em;
-   color: var(--colors-text-color);
  }
 
  .reference__autorization_describe {
@@ -43,7 +47,6 @@
    font-size: 17px;
    line-height: 129%;
    letter-spacing: -0.02em;
-   color: var(--colors-text-color);
    margin-top: 12px;
  }
 
@@ -58,7 +61,6 @@
    font-size: 17px;
    line-height: 129%;
    letter-spacing: -0.02em;
-   color: var(--colors-text-color);
    margin: 12px 0;
  }
 
@@ -68,7 +70,6 @@
    font-size: 17px;
    line-height: 129%;
    letter-spacing: -0.02em;
-   color: var(--colors-text-color);
    margin-top: 12px;
    margin-bottom: 12px;
  }

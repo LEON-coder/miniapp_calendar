@@ -56,10 +56,14 @@
   background: var(--colors-bg-color);
   border-radius: 12px;
   padding: 6px 16px;
+  color: var(--colors-text-color);
 }
 
+
+
 .record-option-dark {
-  background: var(--colors-bg-color);
+  background: #212121;
+  color: white;
 }
 
 .record-item {
@@ -396,27 +400,6 @@
 
 /* Стили для переключателя (switcher)  */
 
-.toggle-switch-voice {
-  position: relative;
-  display: flex;
-  border-radius: 100px;
-  width: 51px;
-  height: 31px;
-  background: var(--colors-bg-secondary-color);
-}
-
-.toggle-switch-voice:after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 20px;
-  height: 0px;
-  background: #fff;
-  border-radius: 90px;
-  transition: 0.3s;
-}
-
 .slider-voice {
   position: absolute;
   width: 100%;
@@ -437,19 +420,31 @@
   transition: transform 0.2s;
 }
 
-.swithcer-voice-input:checked+.slider {
+#toggle-switch-microphone:checked+.slider,
+#toggle-switch-sounds-other:checked+.slider {
   background: var(--colors-green);
 }
 
-.swithcer-voice-input:checked+.slider::before .start-event-block {
-  display: none;
+#toggle-switch-microphone,
+#toggle-switch-sounds-other {
+  appearance: none;
 }
 
-.swithcer-voice-input:checked .start-event-block {
-  display: none;
+#toggle-switch-microphone:checked+.slider::before,
+#toggle-switch-sounds-other:checked+.slider::before {
+  transform: translateX(19px);
+  transition: .5s;
 }
 
-#toggle-switch-voice:checked+.slider::before {
+#toggle-switch-sounds-other:checked+.slider {
+  background: var(--colors-green);
+}
+
+#toggle-switch-microphone {
+  appearance: none;
+}
+
+#toggle-switch-microphone:checked+.slider::before {
   transform: translateX(19px);
   transition: .5s;
 }
@@ -466,7 +461,11 @@
   display: none;
 }
 
-#toggle-switch-voice:checked+.slider-voice::before,
+#toggle-switch-microphone {
+  appearance: none;
+}
+
+#toggle-switch-microphone:checked+.slider-voice::before,
 #toggle-switch-video-conf:checked+.slider-voice::before {
   transform: translateX(19px);
   transition: .5s;

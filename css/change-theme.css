@@ -72,10 +72,7 @@
   background: #302929;
 }
 
-.dark-theme {
-  background: #302929;
-  color: white;
-}
+
 
 .switcher-mode:checked+.switcher-mode-label+.dark-theme {
   background: var(--colors-black-global);

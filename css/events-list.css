@@ -141,5 +141,6 @@
 }
 
 .color-event-dark-active {
-  background-color: var(--colors-bg-menu);
+  background: var(--colors-bg-menu);
+  color: var(--colors-text-color);
 }

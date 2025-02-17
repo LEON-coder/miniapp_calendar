@@ -4,8 +4,11 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  color: var(--colors-text-color);
   margin-top: 16px;
+}
+
+.main__section-body .info-about-app-content {
+  background: var(--colors-bg-secondary-color);
 }
 
 .info-about-app-block__oportunities {
@@ -14,6 +17,12 @@
 
 .oportunities-app-headline {
   margin-top: 12px;
+  font-family: var(--font-family);
+  font-weight: 590;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  color: light-dark(white, black);
 }
 
 .oportunities-app-item__img {
@@ -62,7 +71,6 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  color: var(--colors-text-color);
   margin-bottom: 12px;
 }
 
@@ -79,7 +87,6 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  color: var(--colors-text-color);
   margin-bottom: 12px;
 }
 
@@ -105,7 +112,6 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  color: var(--colors-text-color);
   width: fit-content;
   margin-left: 12px;
 }

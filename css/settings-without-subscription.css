@@ -41,12 +41,6 @@
   color: var(--colors-secondary-hint-color);
 }
 
-.main__section-body {
-  background-color: var(--colors-bg-color);
-  border-radius: 15px 15px 0 0;
-  overflow-y: scroll;
-}
-
 .settings-advertisements-opportunity {
   font-family: var(--font-family);
   font-weight: 500;
