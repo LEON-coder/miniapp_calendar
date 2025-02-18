@@ -35,10 +35,7 @@
   --colors-bg-overlay: #fff;
   --colors-bg-menu: rgba(255, 255, 255, 0.75);
   --colors-darken-overlay: rgba(0, 0, 0, 0.2);
-
-}
-
-:root {
+  color-scheme: light dark;
   --font-family: "SF Pro", sans-serif;
 }
 
@@ -55,9 +52,7 @@
 }
 
 body {
-  background: black;
   height: 100vh;
-  color-scheme: light dark;
 }
 
 .wrapper {
@@ -102,6 +97,7 @@ body {
   line-height: 129%;
   letter-spacing: -0.02em;
   text-align: center;
+  color: light-dark(#fff, #000);
 }
 
 .app-describe {
@@ -287,7 +283,7 @@ body {
   line-height: 129%;
   letter-spacing: -0.02em;
   text-align: center;
-  color: var(--colors-text-color);
+  color: light-dark(white, var(--colors-text-color));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -305,10 +301,14 @@ body {
   line-height: 123%;
   letter-spacing: -0.01em;
   text-align: center;
-  color: var(--colors-secondary-hint-color);
+  color: light-dark (var(--colors-secondary-hint-color), black);
   width: auto;
 }
 
+
+.day-week-light {
+  color: white;
+}
 
 .main__section-events {
   display: flex;
@@ -342,7 +342,7 @@ body {
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  color-scheme: dark;
+  color: light-dark(black, white);
 }
 
 
@@ -467,7 +467,15 @@ footer {
 
 .dark-theme {
   background: var(--colors-darken-overlay);
-  color: var(--colors-bg-tertiary-color);
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.light-theme {
+  --colors-bg-color: #fff;
   transition: all 1s;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;

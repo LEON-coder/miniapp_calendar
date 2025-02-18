@@ -4,6 +4,7 @@
   font-size: 24px;
   line-height: 117%;
   letter-spacing: 0em;
+  color: var(--colors-text-color);
 }
 
 .create-event-inputs {
@@ -97,7 +98,8 @@
   letter-spacing: -0.02em;
   margin-right: 10px;
   width: fit-content;
-  color: light dark(black, white);
+  color: light-dark(white, black);
+  transition: 1s;
 }
 
 .name-dark {
@@ -152,6 +154,7 @@
   justify-content: space-between;
   border-bottom: 0.50px solid var(--colors-divider);
   padding: 4px 0;
+  transition: 1s;
 }
 
 .end-event-block {
@@ -159,6 +162,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 4px 0;
+  transition: 1s;
 }
 
 .event-add-members {
@@ -230,80 +234,78 @@
 
 /* Стили для переключателя (switcher)  */
 
-.toggle-switch {
+.switch-btn {
+  display: inline-block;
+  border-radius: 19px;
+  background: #bfbfbf;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
   position: relative;
-  display: flex;
-  border-radius: 100px;
+  transition-duration: 300ms;
   width: 51px;
   height: 31px;
-  background: var(--colors-bg-secondary-color);
 }
 
-.toggle-switch:after {
-  content: '';
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 20px;
-  height: 0px;
-  background: #fff;
-  border-radius: 90px;
-  transition: 0.3s;
+.switch-btn-video-conf {
+  display: inline-block;
+  border-radius: 19px;
+  background: #bfbfbf;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition-duration: 300ms;
+  width: 51px;
+  height: 31px;
 }
 
-.slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 34px;
-  transition: background-color 0.2s;
-}
-
-.slider::before {
+.switch-btn::after {
   content: "";
-  position: absolute;
-  width: 26px;
-  height: 26px;
+  border-radius: 100px;
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.06), 0 3px 8px 0 var(--colors-divider), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  background: var(--colors-white-global);
+  width: 27px;
+  height: 27px;
+  border-radius: 17px;
+  top: 2px;
   left: 3px;
-  bottom: 3px;
-  background-color: white;
-  border-radius: 50%;
-  transition: transform 0.2s;
+  transition-duration: 300ms;
+  position: absolute;
+  z-index: 1;
 }
 
-input:checked+.slider {
-  background: var(--colors-green);
-}
-
-input:checked+.slider::before .start-event-block {
-  display: none;
-}
-
-input:checked .start-event-block {
-  display: none;
-}
-
-.switcher {
-  display: flex;
+.switch-btn-video-conf::after {
+  content: "";
+  border-radius: 100px;
+  box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.06), 0 3px 8px 0 var(--colors-divider), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  background: var(--colors-white-global);
+  width: 27px;
+  height: 27px;
+  border-radius: 17px;
+  top: 2px;
+  left: 3px;
+  transition-duration: 300ms;
+  position: absolute;
+  z-index: 1;
 }
 
 .switch-on {
-  display: flex;
+  background: #118c4e;
 }
 
-.switch-off {
-  display: none;
+.switch-on-conf {
+  background: #118c4e;
 }
 
-#toggle-switch-all-day:checked+.slider::before,
-#toggle-switch-video-conf:checked+.slider::before {
-  transform: translateX(19px);
-  transition: .5s;
+.switch-on::after {
+  left: 20px;
 }
 
-.section-calendar-open {
-  display: none;
-  justify-content: space-between;
-  width: 100%;
-  flex-direction: column;
+.switch-on-conf::after {
+  left: 20px;
 }
