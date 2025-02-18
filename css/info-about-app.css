@@ -5,10 +5,12 @@
   line-height: 129%;
   letter-spacing: -0.02em;
   margin-top: 16px;
+  color: var(--colors-text-color);
 }
 
-.main__section-body .info-about-app-content {
+.info-about-app-content {
   background: var(--colors-bg-secondary-color);
+  border-radius: 15px 15px 0 0;
 }
 
 .info-about-app-block__oportunities {
@@ -72,6 +74,7 @@
   line-height: 129%;
   letter-spacing: -0.02em;
   margin-bottom: 12px;
+  color: var(--colors-text-color);
 }
 
 .data-list {
@@ -88,6 +91,7 @@
   line-height: 129%;
   letter-spacing: -0.02em;
   margin-bottom: 12px;
+  color: var(--colors-text-color);
 }
 
 .app-confidential {
@@ -114,4 +118,5 @@
   letter-spacing: -0.02em;
   width: fit-content;
   margin-left: 12px;
+  color: var(--colors-text-color);
 }

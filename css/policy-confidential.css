@@ -1,3 +1,8 @@
+.policy-main-body {
+  border-radius: 15px 15px 0 0;
+  background: var(--colors-bg-secondary-color);
+}
+
 .policy-confidential {
   font-family: var(--font-family);
   font-weight: 400;
@@ -16,6 +21,7 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
+  color: var(--colors-text-color);
 }
 
 .margin-bottom {

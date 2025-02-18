@@ -48,6 +48,7 @@
    line-height: 129%;
    letter-spacing: -0.02em;
    margin-top: 12px;
+   color: var(--colors-text-color);
  }
 
  .reference__linking-account {
@@ -72,8 +73,10 @@
    letter-spacing: -0.02em;
    margin-top: 12px;
    margin-bottom: 12px;
+   color: var(--colors-text-color);
  }
 
  .reference__linking-account_list {
    padding-left: 16px;
+   color: var(--colors-text-color);
  }

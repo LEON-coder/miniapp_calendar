@@ -37,5 +37,6 @@ toggle.addEventListener("click", function() {
     nameEvent.style.color = "black";
   } else {
     headline.classList.toggle("light-them-color-text");
+     mainSectionBody.classList.toggle("light-theme");
   }
 });

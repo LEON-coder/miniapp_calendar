@@ -1,3 +1,7 @@
+.event-wrapper {
+  height: auto;
+}
+
 .content-event {
   padding: 0 16px;
   margin-top: 12px;
@@ -14,7 +18,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .meeting-headline-page {
@@ -60,6 +64,7 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
+  color: var(--colors-text-color);
 }
 
 .link-event-block {
@@ -84,6 +89,7 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
+  color: var(--colors-text-color);
 }
 
 .event-description-block {
@@ -96,6 +102,7 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
+  color: var(--colors-text-color);
 }
 
 .event-memebers-block {
@@ -110,6 +117,7 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
+  color: var(--colors-text-color);
 }
 
 .section-members-event {
@@ -130,6 +138,7 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
+  color: var(--colors-text-color);
 }
 
 .member-name-block {

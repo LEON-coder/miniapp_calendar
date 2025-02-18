@@ -119,6 +119,7 @@
   height: 36px;
   margin-right: 4px;
   max-width: 90px;
+  outline: none;
 }
 
 .indicate-time {
@@ -231,6 +232,25 @@
   margin-bottom: 40px;
 }
 
+.create-event__calendar_item {
+  display: none;
+  width: 100%;
+  justify-content: space-between;
+  transition: 1s;
+}
+
+.create-event__calendar_item--show {
+  display: flex;
+}
+
+.create-event__section-calendar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  transition: 1s;
+}
 
 /* Стили для переключателя (switcher)  */
 

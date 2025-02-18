@@ -1,12 +1,7 @@
 
-let allDayBlock = document.querySelector(".all-day-block");
-let startEventBlock = document.querySelector(".start-event-block");
-let endEventBlock = document.querySelector(".end-event-block");
-let slider = document.getElementById(
-  "toggle-switch-all-day input[type='checkbox']:checked"
-);
+let indicateDate = document.querySelector(".indicate-date");
+let Calendar = document.querySelector(".create-event__calendar_item");
 
-slider.addEventListener("click", function() {
-  startEventBlock.classList.toggle("switch-off");
-  endEventBlock.classList.toggle("switch-off");
+indicateDate.addEventListener("click", function() {
+  Calendar.classList.toggle("create-event__calendar_item--show");
 });
