@@ -23,7 +23,6 @@
   font-size: 24px;
   line-height: 117%;
   letter-spacing: 0em;
-  color: var(--colors-text-color);
 }
 
 .meeting-place {
@@ -61,7 +60,6 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  color: var(--colors-text-color);
 }
 
 .link-event-block {
@@ -86,7 +84,6 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  color: var(--colors-text-color);
 }
 
 .event-description-block {
@@ -99,7 +96,6 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  color: var(--colors-text-color);
 }
 
 .event-memebers-block {
@@ -114,7 +110,6 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  color: var(--colors-text-color);
 }
 
 .section-members-event {
@@ -135,7 +130,6 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  color: light-dark(white, black);
 }
 
 .member-name-block {

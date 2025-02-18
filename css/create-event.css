@@ -21,7 +21,7 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  color: var(--colors-secondary-hint-color);
+  /* color: var(--colors-secondary-hint-color); */
   border: none;
 }
 
@@ -30,12 +30,14 @@
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   outline: none;
+  background: var(--colors-bg-color);
 }
 
 .create-event-input:last-child {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   outline: none;
+  background: var(--colors-bg-color);
 }
 
 .during-event-block {
