@@ -475,7 +475,8 @@ footer {
 
 
 .dark-theme {
-  background: var(--colors-darken-overlay);
+  background: var(--colors-black-global);
+  color: var(--colors-bg-secondary-color);
   transition: all 1s;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
