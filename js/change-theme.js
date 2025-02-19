@@ -1,6 +1,6 @@
 let toggle = document.getElementById("dark-mode");
 let mainSectionBody = document.querySelector(".main__section-body");
-let SectionBodyNoFooter = document.querySelector(".section-body__no-footer");
+let policyNameBody = document.querySelector(".policy-main-body");
 let referenceBody = document.querySelector(".reference-body");
 let nameEvent = document.querySelector(".name-event");
 let headlineApp = document.querySelector(".headline-app");
@@ -25,6 +25,7 @@ toggle.addEventListener("click", function() {
   if (!lightTheme) {
     mainSectionBody.classList.toggle("dark-theme");
     referenceBody.classList.toggle("dark-theme");
+    policyNameBody.classList.toggle("dark-theme");
     headlineApp.classList.toggle("light-them-color-text");
     headline.classList.toggle("dark-text");
     recordOption.classList.toggle("record-option-dark");
