@@ -102,7 +102,7 @@
   letter-spacing: -0.02em;
   margin-right: 10px;
   width: fit-content;
-  color: light-dark(white, black);
+  color: var(--colors-text-color);
   transition: 1s;
 }
 
