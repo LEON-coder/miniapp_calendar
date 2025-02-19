@@ -35,7 +35,6 @@
   --colors-bg-overlay: #fff;
   --colors-bg-menu: rgba(255, 255, 255, 0.75);
   --colors-darken-overlay: rgba(0, 0, 0, 0.2);
-  color-scheme: light dark;
   --font-family: "SF Pro", sans-serif;
 }
 
@@ -507,11 +506,4 @@ footer {
   text-align: center;
   color: var(--colors-text-color);
   opacity: 0.15;
-}
-
-@media (prefers-color-scheme: light) {
-  .theme {
-    color: #FFFFFF;
-    background-color: #000000;
-  }
 }
