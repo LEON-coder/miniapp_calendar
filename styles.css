@@ -347,11 +347,12 @@ h2 {
 
 .name-event {
   font-family: var(--font-family);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  color: light-dark(black, white);
+  text-align: center;
+  color: var(--colors-text-color);
 }
 
 

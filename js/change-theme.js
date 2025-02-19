@@ -1,5 +1,6 @@
 let toggle = document.getElementById("dark-mode");
 let mainSectionBody = document.querySelector(".main__section-body");
+let SectionBodyNoFooter = document.querySelector(".section-body__no-footer");
 let referenceBody = document.querySelector(".reference-body");
 let nameEvent = document.querySelector(".name-event");
 let headlineApp = document.querySelector(".headline-app");
@@ -37,6 +38,6 @@ toggle.addEventListener("click", function() {
     nameEvent.style.color = "black";
   } else {
     headline.classList.toggle("light-them-color-text");
-     mainSectionBody.classList.toggle("light-theme");
+    mainSectionBody.classList.toggle("light-theme");
   }
 });
