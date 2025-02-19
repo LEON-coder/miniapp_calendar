@@ -26,7 +26,7 @@
   font-size: 17px;
   line-height: 129%;
   letter-spacing: -0.02em;
-  /* color: var(--colors-secondary-hint-color); */
+   color: var(--colors-secondary-hint-color); 
   border: none;
 }
 
